@@ -85,3 +85,12 @@ body {
 .home-button:hover {
     background-color: #3b79e7;
 }
+
+.recipe-print {
+        bottom: 20px;
+        left: 20px;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }

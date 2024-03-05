@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <title>Delicious Recipes</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Delicious Recipes</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="breakfast.html">Frühstück</a></li>
-                    <li><a href="lunch.html">Mittagessen</a></li>
-                    <li><a href="dinner.html">Abendessen</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        .recipe {
+            display: flex;
+            align-items: center; /* Zentrierung der Inhalte vertikal */
+        }
 
+        .recipe .recipe-content {
+            flex: 1; /* Flexibles Wachstum des Inhalts */
+            padding: 0 20px; /* Änderung des Seitenabstands */
+        }
+
+        .recipe .recipe-image {
+            width: 200px; /* Feste Breite für das Bild */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Recipes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breakfast.html">Frühstück</a></li>
+                <li><a href="lunch.html">Mittagessen</a></li>
+                <li><a href="dinner.html">Abendessen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
         <section id="about">
-            <h2>Willkommen bei Delicious Recipes</h2>
-            <p>Entdecken Sie die besten Rezepte der Welt, vom einfachen Abendessen bis zum Wochenendfrühstück.</p>
-            <img src="kitchen.jpg" alt="Küche" width="10%">
+            <h3>Willkommen bei Delicious Recipes</h3>
+            <center>
+                <p><strong>Tauchen Sie ein in eine Welt voller kulinarischer Genüsse, von einfachen Abendessen bis hin zu raffinierten Wochenendfrühstücken. Entdecken Sie die Vielfalt an köstlichen Rezepten, die Ihren Gaumen verwöhnen und Ihre Kochkünste bereichern werden.</strong></p>
+            </center>
+            <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+                <img src="kitchen.jpg" alt="Küche" width="90%" style="opacity: 0.7;">
+            </div>
         </section>
 
         <article id="featured-recipe">
-            <h2>Empfohlenes Rezept: Pfannkuchen</h2>
-            <p>Knusprige Pfannkuchen, perfekt für ein Wochenendfrühstück.</p>
-            <p><a href="pancakes_recipe.html">Rezept öffnen.</a></p>
-            <figure>
-                <img src="pancakes.jpg" alt="Pfannkuchen" width="20%">
-                <figcaption>Leckere hausgemachte Pfannkuchen.</figcaption>
-            </figure>
-        </article>
         
-        <footer>
-            <p>Ein Rezept vorschlagen: <a href="mailto:recipes@recipe-book.com">eine Email schicken.</a> </p>
-        </footer>
-        
-    </body>
+    <div class="container">
+        <h3>Empfohlenes Rezept: Pfannkuchen</h3>
+        <div class="recipe">
+            <img src="pfannkuchen.jpg" alt="pfannkuchen" class="recipe-image">
+            <div class="recipe-content">
+                <h2>Klassische Pfannkuchen</h2>
+                <p>Gesamtzeit: 8 Minuten</p>
+                <p>Schwierigkeit: Einfach</p>
+                <a href="pancakes_recipe.html">Zum Rezept</a>
+            </div>
+        </div>
+    <footer>
+        <p>Ein Rezept vorschlagen: <a href="mailto:recipes@recipe-book.com">eine Email schicken.</a> </p>
+    </footer>
+</body>
 </html>

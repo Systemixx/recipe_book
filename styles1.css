@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('rezepthintergrund.jpg');
@@ -11,26 +11,26 @@ body {
 }
 
 h1 {
-    color: rgb(0, 0, 0); /* Weiß */
-    text-transform: uppercase; /* Alle Buchstaben in Großbuchstaben umwandeln */
-    font-size: 5.0em; /* Größe des Texts */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center; /* Textausrichtung rechts */
-    padding: 10px 15px; /* Innenabstand oben/unten und links/rechts */
-    letter-spacing: 2px; /* Buchstabenspatium */
-    border-radius: 5px; /* Abrundung der Ecken */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schatten */
+    color: rgb(0, 0, 0); 
+    text-transform: uppercase; 
+    font-size: 5.0em; 
+    font-family: "Pacifico", cursive;
+    text-align: center; 
+    padding: 10px 15px; 
+    letter-spacing: 2px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
 h3 {
     color: rgb(0, 0, 0); 
-    font-size: 1.5em; /* Größe des Texts */
+    font-size: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center; /* Textausrichtung rechts */
-    padding: 10px 15px; /* Innenabstand oben/unten und links/rechts */
-    letter-spacing: 2px; /* Buchstabenspatium */
-    border-radius: 5px; /* Abrundung der Ecken */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schatten */
+    text-align: center; 
+    padding: 10px 15px; 
+    letter-spacing: 2px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -111,7 +111,7 @@ h3 {
 }
 
 .home-button:hover, .recipe a:hover {
-    background-color: #3b79e7;
+    background-color: #0f54cc;
 }
 
 nav {
@@ -139,3 +139,13 @@ a {
     font-size: 16px; /* Schriftgröße */
     transition: color 0.3s; /* Farbübergang */
 }
+
+nav a:hover {
+    color: #ffd700; /* Textfarbe ändern beim Überfahren */
+}
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

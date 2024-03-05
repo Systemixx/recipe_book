@@ -2,8 +2,26 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious Recipes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        .recipe {
+            display: flex;
+            align-items: center; /* Zentrierung der Inhalte vertikal */
+        }
+
+        .recipe .recipe-content {
+            flex: 1; /* Flexibles Wachstum des Inhalts */
+            padding: 0 20px; /* Änderung des Seitenabstands */
+        }
+
+        .recipe .recipe-image {
+            width: 200px; /* Feste Breite für das Bild */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,36 +34,41 @@
                 <li><a href="dinner.html">Abendessen</a></li>
             </ul>
         </nav>
-        <h2>Rezepte zum Abendessen</h2>
-        
-        <div class="container">
-            <h1>Rezeptübersicht</h1>
-            <div class="recipe">
+    </header>
+    <div class="container">
+        <h3>Rezeptübersicht zum Abendessen</h3>
+        <div class="recipe">
+            <img src="lammkotelett.jpg" alt="lammkotelett" class="recipe-image">
+            <div class="recipe-content">
                 <h2>Gebratene Lammkoteletts mit Rosmarin</h2>
-                <img src="lammkotelett.jpg" alt="Lammkoteletts" width="250" class="recipe-image">
                 <p>Gesamtzeit: 40 Minuten</p>
                 <p>Schwierigkeit: Mittel</p>
                 <a href="lammkotletts.html">Zum Rezept</a>
             </div>
-            <div class="recipe">
+        </div>
+        <div class="recipe">
+            <img src="lachs-mit-dill.jpg" alt="lachs-mit-dill" class="recipe-image">
+            <div class="recipe-content">
                 <h2>Gegrillte Lachsfilets mit Zitronen-Dill-Sauce</h2>
-                <img src="lachs-mit-dill.jpg" alt="Lachsfilets" width="250" class="recipe-image">
                 <p>Gesamtzeit: 30 Minuten</p>
                 <p>Schwierigkeit: Einfach</p>
                 <a href="lachsfilets.html">Zum Rezept</a>
             </div>
-            <div class="recipe">
+        </div>
+        <div class="recipe">
+            <img src="rinderfilet.jpg" alt="rinderfilet" class="recipe-image">
+            <div class="recipe-content">
                 <h2>Rinderfiletsteak mit Rotweinjus</h2>
-                <img src="rinderfilet.jpg" alt="Rinderfiletsteak" width="250" class="recipe-image">
                 <p>Gesamtzeit: 35 Minuten</p>
                 <p>Schwierigkeit: Mittel</p>
                 <a href="rinderfilet.html">Zum Rezept</a>
             </div>
         </div>
-    </header>
-
+    </div>
     <footer>
-        <p>Ein Rezept vorschlagen: <a href="mailto:recipes@recipe-book.com">eine Email schicken.</a> </p>
+        
     </footer>
+    <a href="lunch.html" class="home-button">zurück</a>
+    <p>Ein Rezept vorschlagen: <a href="mailto:recipes@recipe-book.com">eine Email schicken.</a> </p>
 </body>
 </html>

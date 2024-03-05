@@ -2,8 +2,26 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious Recipes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        .recipe {
+            display: flex;
+            align-items: center; /* Zentrierung der Inhalte vertikal */
+        }
+
+        .recipe .recipe-content {
+            flex: 1; /* Flexibles Wachstum des Inhalts */
+            padding: 0 20px; /* Änderung des Seitenabstands */
+        }
+
+        .recipe .recipe-image {
+            width: 200px; /* Feste Breite für das Bild */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,36 +34,41 @@
                 <li><a href="dinner.html">Abendessen</a></li>
             </ul>
         </nav>
-        <h2>Rezepte zum Mittagessen</h2>
-        
-        <div class="container">
-            <h1>Rezeptübersicht</h1>
-            <div class="recipe">
+    </header>
+    <div class="container">
+        <h3>Rezeptübersicht zum Mittagessen</h3>
+        <div class="recipe">
+            <img src="rehruecken.jpg" alt="rehruecken" class="recipe-image">
+            <div class="recipe-content">
                 <h2>Rehrücken mit Preiselbeersauce</h2>
-                <img src="rehruecken.jpg" alt="Rehrücken" width="250" class="recipe-image">
                 <p>Gesamtzeit: 45 Minuten</p>
                 <p>Schwierigkeit: Mittel</p>
-                <a href="rehruecken.html">Zum Rezept</a> <!-- geändert von "grilled-chicken.html" -->
-            </div>
-            <div class="recipe">
-                <h2>Wildschweinbraten</h2>
-                <img src="wildschweinbraten.jpg" alt="Wildschweinbraten" width="250" class="recipe-image">
-                <p>Gesamtzeit: 2 Stunden</p>
-                <p>Schwierigkeit: Mittel</p>
-                <a href="wildschweinbraten.html">Zum Rezept</a> <!-- geändert von "quinoa-salad.html" -->
-            </div>
-            <div class="recipe">
-                <h2>Hirschragout</h2>
-                <img src="hirschragout.jpg" alt="Hirschragout" width="250" class="recipe-image">
-                <p>Gesamtzeit: 3 Stunden</p>
-                <p>Schwierigkeit: Fortgeschritten</p>
-                <a href="hirschragout.html">Zum Rezept</a> <!-- geändert von "pasta-tomato-sauce.html" -->
+                <a href="rehruecken.html">Zum Rezept</a>
             </div>
         </div>
-    </header>
-
+        <div class="recipe">
+            <img src="wildschweinbraten.jpg" alt="wildschweinbraten" class="recipe-image">
+            <div class="recipe-content">
+                <h2>Wildschweinbraten</h2>
+                <p>Gesamtzeit: 2 Stunden</p>
+                <p>Schwierigkeit: Mittel</p>
+                <a href="wildschweinbraten.html">Zum Rezept</a>
+            </div>
+        </div>
+        <div class="recipe">
+            <img src="hirschragout.jpg" alt="hirschragout" class="recipe-image">
+            <div class="recipe-content">
+                <h2>Hirschragout</h2>
+                <p>Gesamtzeit: 3 Stunden</p>
+                <p>Schwierigkeit: Fortgeschritten</p>
+                <a href="hirschragout.html">Zum Rezept</a>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>Ein Rezept vorschlagen: <a href="mailto:recipes@recipe-book.com">eine Email schicken.</a> </p>
+        
     </footer>
+    <a href="lunch.html" class="home-button">zurück</a>
+    <p>Ein Rezept vorschlagen: <a href="mailto:recipes@recipe-book.com">eine Email schicken.</a> </p>
 </body>
 </html>

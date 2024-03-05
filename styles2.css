@@ -87,10 +87,22 @@ body {
 }
 
 .recipe-print {
-        bottom: 20px;
-        left: 20px;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-    }
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+.recipe-print button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.recipe-print button:hover {
+    background-color: #3b79e7;
+}

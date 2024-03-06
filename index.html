@@ -8,26 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious Recipes</title>
     <link rel="stylesheet" href="styles1.css">
-    <style>
-        .recipe {
-            display: flex;
-            align-items: center; /* Zentrierung der Inhalte vertikal */
-        }
-
-        .recipe .recipe-content {
-            flex: 1; /* Flexibles Wachstum des Inhalts */
-            padding: 0 20px; /* Änderung des Seitenabstands */
-        }
-
-        .recipe .recipe-image {
-            width: 200px; /* Feste Breite für das Bild */
-            height: auto;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Delicious Recipes</h1>
+        <h1>
+            <div class="container">Delicious  Recipes
+                <div class="bars">
+                    <div class="bar" style="--animation-duration: 5s;"></div>
+                    <div class="bar" style="--animation-duration: 3s;"></div>
+                    <div class="bar" style="--animation-duration: 7s;"></div>
+                </div>
+            </div>
+        </h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -49,20 +41,16 @@
         </section>
 
         <article id="featured-recipe">
-        
-    <div class="container">
-        <h3>Empfohlenes Rezept: Pfannkuchen</h3>
-        <div class="recipe">
-            <img src="pfannkuchen.jpg" alt="pfannkuchen" class="recipe-image">
-            <div class="recipe-content">
-                <h2>Klassische Pfannkuchen</h2>
-                <p>Gesamtzeit: 8 Minuten</p>
-                <p>Schwierigkeit: Einfach</p>
-                <a href="pancakes_recipe.html">Zum Rezept</a>
-            </div>
-        </div>
-    <footer>
-        <p>Ein Rezept vorschlagen: <a href="mailto:recipes@recipe-book.com">eine Email schicken.</a> </p>
-    </footer>
-</body>
-</html>
+            <div class="container">
+                <h3>Empfohlenes Rezept: Pfannkuchen</h3>
+                <div class="recipe">
+                    <img src="pfannkuchen.jpg" alt="pfannkuchen" class="recipe-image">
+                    <div class="recipe-content">
+                        <h2>Klassische Pfannkuchen</h2>
+                        <p>Gesamtzeit: 8 Minuten</p>
+                        <p>Schwierigkeit: Einfach</p>
+                        <a href="pancakes_recipe.html">Zum Rezept</a>
+                    </div>
+                </div>
+                <footer>
+                    <p>Ein Rezept vorschlagen: <a href="mailto:recipes@recipe-book.com">eine Email schicken.</a

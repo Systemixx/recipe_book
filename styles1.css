@@ -13,13 +13,44 @@ body {
 h1 {
     color: rgb(0, 0, 0); 
     text-transform: uppercase; 
-    font-size: 5.0em; 
+    font-size: 4.0em; 
     font-family: "Pacifico", cursive;
     text-align: center; 
     padding: 10px 15px; 
     letter-spacing: 2px; 
     border-radius: 5px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    position: relative; /* Position relativ setzen */
+    z-index: 1; /* Über der Balkenposition */
+}
+
+h1 .container {
+    position: relative; /* Position relativ setzen */
+    z-index: 1; /* Über der Balkenposition */
+    width: 100%; /* Volle Breite */
+}
+
+h1 .bars {
+    position: absolute; /* Position absolut setzen */
+    top: 3%; /* Oben ausrichten */
+    left: 0; /* Links ausrichten */
+    width: 100%; /* Volle Breite */
+    height: 2em; /* Höhe des Balkencontainers begrenzen */
+    margin-top: -0.5em; /* Hälfte der Höhe als negativen Margin, um zentriert zu bleiben */
+}
+
+h1 .bar {
+    position: absolute; /* Position absolut setzen */
+    top: 0; /* Oben ausrichten */
+    width: 10%; /* Breite des Balkens anpassen */
+    height: 134%; /* Volle Höhe */
+    background-color: rgba(255, 255, 255, 0.36); /* Farbe und Transparenz des Balkens anpassen */
+    animation: slide var(--animation-duration) linear infinite alternate; /* Dauer der Animation und Timing-Funktion anpassen */
+}
+
+@keyframes slide {
+    0% { left: 0; }
+    100% { left: 100%; }
 }
 
 h3 {
@@ -58,6 +89,7 @@ h3 {
     max-width: 200px;
     height: auto;
     border-radius: 10px;
+    margin-right: 20px;
 }
 
 .recipe-content {
@@ -143,9 +175,3 @@ a {
 nav a:hover {
     color: #ffd700; /* Textfarbe ändern beim Überfahren */
 }
-.pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  

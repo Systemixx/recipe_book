@@ -115,33 +115,33 @@ h3 {
 }
 
 nav {
-    background-color: #48284a; /* Hintergrundfarbe */
-    padding: 10px 0; /* Innenabstand oben/unten und links/rechts */
+    background-color: #48284a; 
+    padding: 10px 0;
 }
 
 ul {
-    list-style-type: none; /* Listenpunkte entfernen */
+    list-style-type: none; 
     margin: 0;
     padding: 0;
-    display: flex; /* Flexbox verwenden */
-    justify-content: center; /* Menü in der Mitte zentrieren */
+    display: flex;
+    justify-content: center;
 }
 
 li {
-    margin: 0 15px; /* Abstand zwischen den Elementen */
+    margin: 0 15px;
 }
 
 a {
-    text-decoration: none; /* Unterstreichung entfernen */
-    color: #ffffff; /* Textfarbe */
-    font-weight: bold; /* Fettdruck */
-    text-transform: uppercase; /* Alle Buchstaben in Großbuchstaben umwandeln */
-    font-size: 16px; /* Schriftgröße */
-    transition: color 0.3s; /* Farbübergang */
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    font-size: 16px; 
+    transition: color 0.3s; 
 }
 
 nav a:hover {
-    color: #ffd700; /* Textfarbe ändern beim Überfahren */
+    color: #ffd700;
 }
 .pacifico-regular {
     font-family: "Pacifico", cursive;

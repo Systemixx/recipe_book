@@ -6,20 +6,20 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5); 
     color: #333;
 }
 
 h1 {
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    font-size: 4.0em;
+    color: rgb(0, 0, 0); 
+    text-transform: uppercase; 
+    font-size: 4.0em; 
     font-family: "Pacifico", cursive;
-    text-align: center;
-    padding: 10px 15px;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center; 
+    padding: 10px 15px; 
+    letter-spacing: 2px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     position: relative;
     z-index: 1;
 }
@@ -54,13 +54,13 @@ h1 .bar {
 }
 
 h3 {
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); 
     font-size: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    padding: 10px 15px;
-    letter-spacing: 2px;
-    border-radius: 5px;
+    text-align: center; 
+    padding: 10px 15px; 
+    letter-spacing: 2px; 
+    border-radius: 5px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -71,24 +71,36 @@ h3 {
 }
 
 .recipe {
-    margin-bottom: 10px; /* Verkleinerter Abstand zwischen den Rezepten für kleinere Bildschirme */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column; /* Rezepte werden in Spalten angezeigt */
+    flex-wrap: wrap;
+}
+
+.recipe .recipe-content {
+    flex: 1; 
+}
+
+.recipe .recipe-image {
+    width: 200px; 
+    height: auto;
 }
 
 .recipe .image-container {
-    text-align: center; /* Bildcontainer zentriert */
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
 }
 
 .recipe-image {
-    max-width: 100%; /* Maximale Breite des Bildes auf 100% gesetzt */
+    max-width: 200px;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px; /* Abstand zwischen Bild und Inhalt hinzugefügt */
+    margin-right: 20px;
 }
 
 .recipe-content {
@@ -147,15 +159,15 @@ h3 {
 
 nav {
     background-color: #48284a;
-    padding: 10px 0;
+    padding: 10px 0; 
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; 
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    justify-content: center; 
 }
 
 li {
@@ -164,15 +176,15 @@ li {
 
 a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: #ffffff; 
+    font-weight: bold; 
+    text-transform: uppercase; 
     font-size: 16px;
-    transition: color 0.3s;
+    transition: color 0.3s; 
 }
 
 nav a:hover {
-    color: #ffd700;
+    color: #ffd700; 
 }
 
 /* Responsive Änderung Emanuel, Tom, Chris */
@@ -202,15 +214,15 @@ nav a:hover {
         font-size: 20px;
     }
     .home-button, .recipe a {
-        padding: 8px 16px; /* Verkleinern des Padding für die Navigationsschaltflächen */
-        font-size: 14px; /* Verkleinern der Schriftgröße für die Navigationsschaltflächen */
+        padding: 8px 16px;
+        font-size: 14px;
     }
     nav {
-        padding: 5px 0; /* Verkleinerung des Navigations-Paddings */
+        padding: 5px 0; 
     }
     ul {
-        flex-wrap: wrap; /* Zeilenumbruch für Navigationslinks */
+        flex-wrap: wrap;
     }
     li {
-        margin: 5px 10px; /* Abstand zwischen den Navigationslinks verkleinert */
+        margin: 5px 10px; 
     }

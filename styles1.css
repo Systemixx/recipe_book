@@ -6,46 +6,46 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5);
     color: #333;
 }
 
 h1 {
-    color: rgb(0, 0, 0); 
-    text-transform: uppercase; 
-    font-size: 4.0em; 
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 4.0em;
     font-family: "Pacifico", cursive;
-    text-align: center; 
-    padding: 10px 15px; 
-    letter-spacing: 2px; 
-    border-radius: 5px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    position: relative; /* Position relativ setzen */
-    z-index: 1; /* Über der Balkenposition */
+    text-align: center;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
 h1 .container {
-    position: relative; /* Position relativ setzen */
-    z-index: 1; /* Über der Balkenposition */
-    width: 100%; /* Volle Breite */
+    position: relative;
+    z-index: 1;
+    width: 100%;
 }
 
 h1 .bars {
-    position: absolute; /* Position absolut setzen */
-    top: 3%; /* Oben ausrichten */
-    left: 0; /* Links ausrichten */
-    width: 100%; /* Volle Breite */
-    height: 2em; /* Höhe des Balkencontainers begrenzen */
-    margin-top: -0.5em; /* Hälfte der Höhe als negativen Margin, um zentriert zu bleiben */
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 100%;
+    height: 2em;
+    margin-top: -0.5em;
 }
 
 h1 .bar {
-    position: absolute; /* Position absolut setzen */
-    top: 0; /* Oben ausrichten */
-    width: 10%; /* Breite des Balkens anpassen */
-    height: 134%; /* Volle Höhe */
-    background-color: rgba(255, 255, 255, 0.36); /* Farbe und Transparenz des Balkens anpassen */
-    animation: slide var(--animation-duration) linear infinite alternate; /* Dauer der Animation und Timing-Funktion anpassen */
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 134%;
+    background-color: rgba(255, 255, 255, 0.36);
+    animation: slide var(--animation-duration) linear infinite alternate;
 }
 
 @keyframes slide {
@@ -54,13 +54,13 @@ h1 .bar {
 }
 
 h3 {
-    color: rgb(0, 0, 0); 
+    color: rgb(0, 0, 0);
     font-size: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center; 
-    padding: 10px 15px; 
-    letter-spacing: 2px; 
-    border-radius: 5px; 
+    text-align: center;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -87,16 +87,6 @@ h3 {
 
 .recipe-image {
     max-width: 200px;
-    lammkotelett
-    Gebratene Lammkoteletts mit Rosmarin
-    Gesamtzeit: 40 Minuten
-    
-    Schwierigkeit: Mittel
-    
-    ZUM REZEPT
-    lachs-mit-dill
-    Gegrillte Lachsfilets mit Zitronen-Dill-Sauce
-    Gesamtzeit: 30
     height: auto;
     border-radius: 10px;
     margin-right: 20px;
@@ -157,31 +147,61 @@ h3 {
 }
 
 nav {
-    background-color: #48284a; /* Hintergrundfarbe */
-    padding: 10px 0; /* Innenabstand oben/unten und links/rechts */
+    background-color: #48284a;
+    padding: 10px 0;
 }
 
 ul {
-    list-style-type: none; /* Listenpunkte entfernen */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Flexbox verwenden */
-    justify-content: center; /* Menü in der Mitte zentrieren */
+    display: flex;
+    justify-content: center;
 }
 
 li {
-    margin: 0 15px; /* Abstand zwischen den Elementen */
+    margin: 0 15px;
 }
 
 a {
-    text-decoration: none; /* Unterstreichung entfernen */
-    color: #ffffff; /* Textfarbe */
-    font-weight: bold; /* Fettdruck */
-    text-transform: uppercase; /* Alle Buchstaben in Großbuchstaben umwandeln */
-    font-size: 16px; /* Schriftgröße */
-    transition: color 0.3s; /* Farbübergang */
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ffd700; /* Textfarbe ändern beim Überfahren */
+    color: #ffd700;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 3.0em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    .recipe .image-container {
+        text-align: center;
+        margin-right: 0;
+    }
+    .recipe-image {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
 }

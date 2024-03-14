@@ -1,3 +1,4 @@
+/* Grundlegende Styles */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -71,25 +72,24 @@ h3 {
 }
 
 .recipe {
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Verkleinerter Abstand zwischen den Rezepten für kleinere Bildschirme */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
+    flex-direction: column; /* Rezepte werden in Spalten angezeigt */
 }
 
 .recipe .image-container {
-    flex: 1;
-    text-align: right;
-    margin-right: 20px;
+    text-align: center; /* Bildcontainer zentriert */
 }
 
 .recipe-image {
-    max-width: 200px;
+    max-width: 100%; /* Maximale Breite des Bildes auf 100% gesetzt */
     height: auto;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-bottom: 10px; /* Abstand zwischen Bild und Inhalt hinzugefügt */
 }
 
 .recipe-content {
@@ -191,17 +191,19 @@ nav a:hover {
         font-size: 1.2em;
     }
     .recipe .image-container {
-        text-align: center;
         margin-right: 0;
     }
     .recipe-image {
         max-width: 100%;
-        margin-right: 0;
     }
     .title {
         font-size: 28px;
     }
     .subtitle {
         font-size: 20px;
+    }
+    .home-button, .recipe a {
+        padding: 8px 16px; /* Verkleinern des Padding für die Navigationsschaltflächen */
+        font-size: 14px; /* Verkleinern der Schriftgröße für die Navigationsschaltflächen */
     }
 }

@@ -1,4 +1,3 @@
-/* Grundlegende Styles */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -176,7 +175,7 @@ nav a:hover {
     color: #ffd700;
 }
 
-/* Responsive Styles */
+/* Responsive Änderung Emanuel, Tom, Chris */
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 3.0em;
@@ -215,4 +214,3 @@ nav a:hover {
     li {
         margin: 5px 10px; /* Abstand zwischen den Navigationslinks verkleinert */
     }
-}

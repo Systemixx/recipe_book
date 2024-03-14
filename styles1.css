@@ -206,4 +206,13 @@ nav a:hover {
         padding: 8px 16px; /* Verkleinern des Padding für die Navigationsschaltflächen */
         font-size: 14px; /* Verkleinern der Schriftgröße für die Navigationsschaltflächen */
     }
+    nav {
+        padding: 5px 0; /* Verkleinerung des Navigations-Paddings */
+    }
+    ul {
+        flex-wrap: wrap; /* Zeilenumbruch für Navigationslinks */
+    }
+    li {
+        margin: 5px 10px; /* Abstand zwischen den Navigationslinks verkleinert */
+    }
 }
